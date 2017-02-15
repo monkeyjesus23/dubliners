@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>A Little Cloud</title>
-    
-        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-2mX2PSpkRSXLQzmNzH3gwK6srb06+OfbDlYjbog8LQuALYJjuQ3+Yzy2JIWNV9rW" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-        
-        
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
-        
-    <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all buttons
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-    
-    </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
-        <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#top"><img src="images/chandler.png" style="width: 40px; height: auto; margin-top: -10px; margin-left: 15px;"></a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-            <li><a href="#section2">Little Chandler</a></li>
-            <li><a href="#section3">About</a></li>
-            <li><a href="#section4">Life</a></li>
-            <li><a href="#section5">Contact</a></li>
-        </ul>
-        </div>
-    </div>
-    </nav>
-        
-    
-    </body>
+   <head>
+      <title>A Little Cloud</title>
+      <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-2mX2PSpkRSXLQzmNzH3gwK6srb06+OfbDlYjbog8LQuALYJjuQ3+Yzy2JIWNV9rW" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style>
+         .parallax { 
+         /* The image used */
+         background-image: url(images/.jpg);
+         /* Set a specific height */
+         height: 500px; 
+         /* Create the parallax scrolling effect */
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         margin: 90px;
+         margin: 5%;
+         font-weight: bold;
+         color: white;
+         }
+      </style>
+      <script>
+         $(document).ready(function(){
+           // Add smooth scrolling to all buttons
+           $("a").on('click', function(event) {
+         
+             // Make sure this.hash has a value before overriding default behavior
+             if (this.hash !== "") {
+               // Prevent default anchor click behavior
+               event.preventDefault();
+         
+               // Store hash
+               var hash = this.hash;
+         
+               // Using jQuery's animate() method to add smooth page scroll
+               // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+               $('html, body').animate({
+                 scrollTop: $(hash).offset().top
+               }, 800, function(){
+            
+                 // Add hash (#) to URL when done scrolling (default click behavior)
+                 window.location.hash = hash;
+               });
+             } // End if
+           });
+         });
+      </script>
+   </head>
+   <body data-spy="scroll" data-target=".navbar" data-offset="50">
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#top"><img src="images/chandler.png" style="width: 40px; height: auto; margin-top: -10px; margin-left: 15px;"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav">
+                  <li><a href="#section2">Little Chandler</a></li>
+                  <li><a href="#section3">About</a></li>
+                  <li><a href="#section4">Life</a></li>
+                  <li><a href="#section5">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </body>
 </html>
