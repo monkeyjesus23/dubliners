@@ -69,6 +69,14 @@
          font-weight: bold;
          color: white;
          }
+          
+        body, html, .main {
+                height: 600px;
+                }
+
+        section, {
+                min-height: 600px;
+                }
       </style>
       <script>
          $(document).ready(function(){
@@ -87,7 +95,7 @@
                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                $('html, body').animate({
                  scrollTop: $(hash).offset().top
-               }, 800, function(){
+               }, 5000, function(){
             
                  // Add hash (#) to URL when done scrolling (default click behavior)
                  window.location.hash = hash;
@@ -111,57 +119,45 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav">
-                  <li><a href="#section2">Little Chandler</a></li>
-                  <li><a href="#section3">About</a></li>
-                  <li><a href="#section4">Life</a></li>
-                  <li><a href="#section5">Ambitions</a></li>
-                  <li><a href="#section6">Contact</a></li>
+                  <li><a href="#section2">About</a></li>
+                  <li><a href="#section3">Life</a></li>
+                  <li><a href="#section4">Ambitions</a></li>
                </ul>
             </div>
          </div>
       </nav>
-      <div class="parallax" style= "text-align: center;">
+      <div class="parallax" style= "text-align: center; padding-top: 200px;" id="top">
          <h1><span>Little Chandler</span></h1>
          <h3>A little cloud</h3>
       </div>
+       <div class="main" id="section1">
+        <section>
+          
+        </section>
+       </div>
       <div class="parallax2" style= "text-align: center;">
          <h1><span>About</span></h1>
       </div>
-      <div class="container">
-         <div class="row">
-            <div class="col-sm-6 col-md-4">
-               <!--Panel-->
-               <div class="thumbnail">
-                  <div class="caption">
-                     <h2>Family</h2>
-                     <p>1 kid</p>
-                     <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-               <div class="thumbnail">
-                  <div class="caption">
-                     <h2>Family</h2>
-                     <p>1 kid</p>
-                     <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-               <div class="thumbnail">
-                  <div class="caption">
-                     <h2>Family</h2>
-                     <p>1 kid</p>
-                     <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+      <div class="main" id="section2">
+        <section>
+          <ul>
+            <li style="width: 800px; margin: 0 auto; text-align: left; font-size: 45px; padding-top: 200px;"><strong>Little Chandler, Gallaher and his wife.</strong></li>
+            <li style="width: 800px; margin: 0 auto; text-align: left; font-size: 45px;"><strong>Regretting life and doubting himself.</strong></li>
+          </ul>
+        </section>
+       </div>
+       
       <div class="parallax3" style= "text-align: center;">
          <h1><span>Life</span></h1>
       </div>
+       <div class="main" id="section3">
+        <section>
+          <ul>
+            <li style="width: 800px; margin: 0 auto; text-align: left; font-size: 45px; padding-top: 200px;"><strong></strong></li>
+            <li style="width: 800px; margin: 0 auto; text-align: left; font-size: 45px;"><strong>Regretting life and doubting himself.</strong></li>
+          </ul>
+        </section>
+       </div>
       <div class="parallax4" style= "text-align: center;">
          <h1><span>Ambitions</span></h1>
       </div>
